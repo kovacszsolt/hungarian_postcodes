@@ -14,5 +14,5 @@ TARGET_FILE=output.json
 1. npm i  
 2. npm run start  
 
-##Usage with docker
+##Usage with docker  
 docker run  -v ${PWD}/output.json:/usr/src/app/output.json kovacszsolt/hungarian_postcodes
