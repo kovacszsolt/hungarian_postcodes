@@ -24,7 +24,7 @@ const fileDownload = (source, target) => {
 const findUnique = (recordList) => {
     const returnList = [];
     recordList.forEach((record) => {
-        if (returnList.find(a => a.title === record.title) === undefined) {
+        if (returnList.find(a => a.value === record.value) === undefined) {
             returnList.push(record);
         }
     });

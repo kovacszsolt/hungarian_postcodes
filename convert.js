@@ -14,10 +14,9 @@ const generateList = (sourceFileName) => {
         return {value: record.IRSZ, title: 'Budapest ' + record['KER'] + ' kerület'}
     });
 
-    const settlementRecordListUnique = utils.findUnique(settlementRecordList);
-    const budapestRecordListUnique =  utils.findUnique(budapestRecordList);
-    const zipList = settlementRecordListUnique.concat(budapestRecordListUnique);
-    return zipList;
+    const zipList = settlementRecordList.concat(budapestRecordList);
+    const zipListUnique =utils.findUnique(zipList);
+    return zipListUnique;
 }
 
 module.exports = {generateList};
